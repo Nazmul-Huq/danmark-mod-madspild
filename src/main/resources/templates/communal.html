@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    body {
+        font-size: 20px;
+        font-family: courier, serif;
+    }
+
+    /* CSS for main structure starts here*/
+    .head-menu{padding: 0px 75px 0px 75px; background-color: #459C98;}
+    .body-div{margin: 0px 75px 0px 75px; background-color: lightblue; padding: 15px;}
+    .footer{padding: 0px 75px 0px 75px; background-color: #459C98; }
+    .container, .row{display: flex;}
+    .container > div{flex: 1;}
+    /* CSS for main structure ends here*/
+
+    #name-div{
+        font-weight: bold;
+        font-size: xxx-large;
+        color: white;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+
+    #menu-div{
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    .column{
+        border: 5px solid #598c85;
+        border-radius: 15px;
+        width: 33%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #2f5aa2;
+        color: #bbd9b8;
+        height: auto;
+    }
+    .row{margin-left: 20px; margin-right: 20px}
+    .column h1{ color: #FFF0F5}
+    .column img{ width: 100%; }
+    .read-more{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    /* CSS for navigation menu starts here*/
+    *, *:before, *:after{ padding: 0; margin: 0; }
+    nav ul{
+        list-style: none;
+        position: relative;
+        float: left;
+        display: inline-table;
+    }
+    nav ul li{float: left; border: 1px solid white; border-radius: 5px; margin: 2px; background-color: #47806D;}
+    nav ul li:hover{background: rgba(0,0,0,.25);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li a{
+        display: block;
+        padding: 30px 20px;
+        text-decoration: none; /* remove underline from link*/
+        color: white; /* text colour of each menu*/
+        letter-spacing: 2px; /* make space between each letter */
+
+    }
+    nav ul ul{
+        display: none;
+        background: #47806D;
+        position: absolute; /* prevent overflow ul*/
+    }
+    nav ul ul li{
+        float: none;
+        position: relative;
+    }
+    nav ul ul li a {
+        padding: 15px 30px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    /* CSS for navigation menu ends here*/
+
+
+
+
+    /* CSS for footer starts here ***************************************/
+    /*  to create different social media icons, font-awesome from cloudflare.com is used*/
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 15px;
+    }
+    .fa:hover { opacity: 0.7; }
+    .fa-facebook { background: #3B5998; color: white; }
+    .fa-instagram {background: #125688; color: white; }
+    .fa-youtube {background: #bb0000; color: white; }
+    /* CSS for footer ends here *****************************************/
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kommune</title>
+</head>
+<body>
+
+<div class="container head-menu">
+    <div id="logo-div">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274211050_682990152776735_4994998550827804040_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=aiaBsAeco6MAX8e6TBH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL46b8FD5aK_XZw2eXHLkvmKt_hhxXxPDUXOFH1oNbATA&oe=6243292E" height="200px", width="400px">
+    </div>
+    <div id="name-div">
+        Danmark <br> Mod <br> Madspild
+    </div>
+    <div id="menu-div">
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul>
+                        <li><a href="">WHO WE ARE</a></li>
+                        <li><a href="">OUR HISTORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">KOMMUNE</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+<div class="body-div">
+
+    <div class="row">
+        <div class="column">
+            <h1>Odense Kommune vil reducere madspild</h1>
+            <p></p>
+            <img src="https://www.esmiley.dk/hubfs/DK-Blog-images/foodprepping.png">
+            <p>
+                CAFÉerne i Odense kommune, som hver dag tilbyder måltider til kommunens ansatte og forplejning til møder og konferencer,
+                har nu også kastet sig over at tage ansvar for mængden af madspild.
+            </p>
+            <p class="read-more"><a href="https://www.esmiley.dk/blog/odense-kommune-vil-reducere-madspild">Read more</a></p>
+        </div>
+
+        <div class="column">
+            <h1>Skanderborg Køkken mindsker madspild</h1>
+            <img src="https://www.skanderborg.dk/Admin/Public/GetImage.ashx?Image=/Files/Images/Gr%C3%B8n%20Skanderborg/vores-koekken-mindsker-madspild.jpg&Width=768&Crop=5">
+            <p>
+                Vores Køkken, der leverer mad til blandt andet plejehjem i Skanderborg Kommune,
+                arbejder aktivt for at minimere spild af mad. Det kræver kreativitet og tilvænning,
+                men det medfører samtidig et overskud i budgettet, så en stigende del af råvarerne kan blive økologiske.
+            </p>
+            <p class="read-more"><a href="https://www.skanderborg.dk/politik-og-faellesskab/groen-skanderborg/gode-historier-til-inspiration/madspild-og-klimakost/vores-koekken-mindsker-madspild">Read more</a></p>
+        </div>
+
+            <div class="column">
+                <h1>Mere klimavenlig mad i kommuner</h1>
+                <img src="https://cdn.lfmedia.dk/cmscontent/media/pagecontent/max/29003.webp">
+                <p>
+                    Aarhus og Københavns kommuner vil reducere klimaaftrykket fra maden i de kommunale vuggestuer, skoler, sociale tilbud og plejehjem med 25 procent.
+                    Det skal et et nyt partnerskab med Miljø- og Fødevareministeriet samt Klima-, Energi- og Forsyningsministeriet hjælpe til med.
+                </p>
+                <p class="read-more"><a href="https://effektivtlandbrug.landbrugnet.dk/artikler/markedsfokus/mere-klimavenlig-mad-i-kommuner.aspx">Read more</a></p>
+            </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h1>Aarhus og København skal gå forrest med klimavenlig mad i kommunale køkkener</h1>
+            <img src="https://www.valdemarsro.dk/wp-content/2018/01/bagte-kartofler-opskrift.jpg">
+            <p>
+                Et nyt partnerskab mellem Miljø- og Fødevareministeriet, Klima-, Energi- og Forsyningsministeriet, Aarhus Kommune og Københavns Kommune ser nu dagens lys.
+
+                Ambitionen er at de kommunale køkkener skal barbere 25 procent af klimabelastningen i mad- og måltidsproduktionen senest i 2025. Det er hensigten,
+                at resultaterne af samarbejdet også skal kunne bruges af andre kommuner.
+            </p>
+            <p class="read-more"><a href="https://www.magasinetpleje.dk/article/view/719944/aarhus_og_kobenhavn_skal_ga_forrest_med_klimavenlig_mad_i_kommunale_kokkener">Read more</a></p>
+        </div>
+        <div class="column">
+            <h1>Kommune til kamp mod madspild med skør kampagne</h1>
+            <p>
+                <br>
+                Vi spilder alt for meget mad.
+                Det er et efterhånden velkendt udsagn, som både foreninger, organisationer og kommuner forsøger at gøre borgere opmærksomme på
+                I anledning af julen har kommunen i denne uge endnu en gang sat fokus på madspildsproblematikken i kampagnen #spisdethele. Kampagnen har været i gang siden oktober måned.
+                Det har mundet ud i en række forskellige tiltag hos kommunen
+            </p>
+            <p>
+                En kampagne der skal fænge
+                Københavns Kommune står bag kampagnen. De har valgt en lidt gakket historie at at blive set.
+
+                - Vi har tænkt over, hvordan vi fanger folks opmærksomhed i en verden, hvor vi bombarderes med information.
+                Derfor har vi valgt en kampagne, der adskiller sig fra andre, siger Merete Kristoffersen, der er enedshchef for ressourcer og affaldsområdet.
+            <p class="read-more"><a href="https://www.tv2lorry.dk/kobenhavn/kommune-til-kamp-mod-madspild-med-skor-kampagne">Read more</a></p>
+
+            </p>
+
+        </div>
+        <div class="column">
+            <h1>Kamp mod madspild midt i København</h1>
+            <p>
+                MAD – Torsdag bliver der uddelt gratis mad lavet af overskudsvarer til flere tusind mennesker på Rådhuspladsen i København.
+                Det sker ved Danmarks største event mod madspild som miljøminister Kirsten Brosbøl og Stop Spild Af Mad er vært for.
+                <br>
+            </p>
+            <img src="http://www.organictoday.dk/wp-content/uploads/madspild-01.jpg">
+            <p>
+                <br>
+                Stop Spild Af Mad og partnere afholdte for nylig Finlands største event mod madspild United Against Food Waste -
+                som er i 2014 en del af nordisk event-række, United Against Food Waste Nordic. Eventen bød på gratis bespisning af flere tusinde mennesker med gode overskudsfødevarer -
+                med talere som bl.a. Afsané Bassir-Pour, Direktør af FN's informationscenter i Bruxelles UNRIC. Foto: Stop spild af mad
+            </p>
+
+            <p class="read-more"><a href="http://www.organictoday.dk/kamp-mod-madspild-midt-i-kobenhavn/">Read more</a></p>
+
+        </div>
+    </div>
+</div>
+
+<div class="container footer">
+
+    <div id="address-div">
+        <h1>Address</h1>
+        Team Charlie <br/>
+        Room - E326 <br/>
+        Guldbergsgade 29N, <br/>
+        2200 København <br/>
+    </div>
+
+    <div id="contact-div">
+        <h1>Contact Us</h1>
+        Phone: + 45 00 00 00 00 <br/>
+        Email: madspild@stud.kea.dk
+    </div>
+    <!--  to create different social media icons, font-awesome from cloudflare.com is used -->
+    <div id="follow-div">
+        <h1>Follow Us</h1>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -10,4 +10,9 @@ public class HomeController {
     public String home() {
         return "index";
     }
+
+    @GetMapping("/Kommune")
+    public String communal() {
+       return "communal";
+    }
 }
