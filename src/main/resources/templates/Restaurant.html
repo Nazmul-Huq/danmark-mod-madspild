@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        .container{
+            display: flex;
+        }
+
+        .container > div{
+            flex: 1;
+        }
+
+        .head-menu{padding: 0px 75px 0px 75px; background-color: #459C98;}
+        .body-div{margin: 0px 75px 0px 75px; background-color: #93C3A0; padding: 10px;}
+        .footer{padding: 0px 75px 0px 75px; background-color: #459C98; }
+        .container, .row{display: flex;}
+        .container > div{flex: 1;}
+
+        #name-div{
+            font-weight: bold;
+            font-size: xxx-large;
+            color: white;
+            padding-top: 10px;
+
+        }
+
+
+        #menu-div{
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        .column{
+            border: 5px solid #347572;
+            border-radius: 15px;
+            width: 50%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #a69a9a;
+            color: #bbd9b8;
+            height: auto;
+        }
+
+        .row{margin-left: 20px; margin-right: 20px}
+        .column h1{ color: #FFF0F5}
+        /* Don't need
+        .column img{width: 100%;}
+         */
+        .read-more{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        /* CSS for navigation menu starts here*/
+        *, *:before, *:after{ padding: 0; margin: 0; }
+        nav ul{
+            list-style: none;
+            position: relative;
+            float: left;
+            display: inline-table;
+        }
+        nav ul li{float: left; border: 1px solid white; border-radius: 5px; margin: 2px; background-color: #47806D;}
+        nav ul li:hover{background: rgba(0,0,0,.25);}
+        nav ul li:hover > ul{display: block;}
+        nav ul li a{
+            display: block;
+            padding: 30px 20px;
+            text-decoration: none; /* remove underline from link*/
+            color: white; /* text colour of each menu*/
+            letter-spacing: 2px; /* make space between each letter */
+
+        }
+        nav ul ul{
+            display: none;
+            background: #47806D;
+            position: absolute; /* prevent overflow ul*/
+        }
+        nav ul ul li{
+            float: none;
+            position: relative;
+        }
+        nav ul ul li a {
+            padding: 15px 30px;
+            border-bottom: 1px solid rgba(0,0,0,.05);
+        }
+        /* CSS for navigation menu ends here*/
+
+        /* CSS for footer starts here ***************************************/
+        /*  to create different social media icons, font-awesome from cloudflare.com is used*/
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 15px;
+        }
+        .fa:hover { opacity: 0.7; }
+        .fa-facebook { background: #3B5998; color: white; }
+        .fa-instagram {background: #125688; color: white; }
+        .fa-youtube {background: #bb0000; color: white; }
+        /* CSS for footer ends here *****************************************/
+
+
+    </style>
+    <title>Restaurant</title>
+
+</head>
+<body>
+
+<div class="container head-menu">
+    <div id="logo-div">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274211050_682990152776735_4994998550827804040_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=aiaBsAeco6MAX8e6TBH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL46b8FD5aK_XZw2eXHLkvmKt_hhxXxPDUXOFH1oNbATA&oe=6243292E" height="200px", width="400px">
+    </div>
+    <div id="name-div">
+        Danmark <br> Mod <br> Madspild
+    </div>
+    <div id="menu-div">
+        <nav>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul>
+                        <li><a href="">WHO WE ARE</a></li>
+                        <li><a href="">OUR HISTORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="Restaurant">RESTAURANT</a></li>
+                <li><a href="communal">KOMMUNE</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<!- Code written by Søs->
+<div class="body-div">
+   <div class="row">
+        <div class="column">
+            <div style="float: left">
+                <div style="padding: 10px">
+                <img src="http://fvm.dk/fileadmin/_processed_/b/2/csm_FVM_krone_groen_baggrund_56b9d0622b.png" width="138px" height="116px">
+            </div>
+            </div>
+                <h1>Lovgivning:</h1>
+            Skrive en hel masse om lovningen med hensyn til håndtering af madvare og hvornår det skal smides ud <br>
+            Bl.a. andet
+
+        </div>
+        <div class="column">
+            <h1>Overordnet Anbefalinger</h1>
+            • Involver medarbejderne i arbejdet med madspild: de kan
+            identificere årsager og løsninger f.eks. på et personalemøde.
+            Opvasker, tjener og kok har forskellige blik på, hvor der opstår
+            madspild, og hvordan man kan arbejde med det. <br>
+            • Prioriter indsatsområder og sæt ind et sted af gangen for at
+            etablere nye vaner og rutiner ordentligt. <br>
+            • Mål på spildet og sæt mål for reduktion - fordel og tydeliggør
+            hvem der har ansvaret - og fejr jeres sejre kollektivt
+        </div>
+   </div>
+    <div class="row">
+        <div class="column">
+
+
+        </div>
+        <div class="column">
+
+
+        </div>
+</div>
+
+
+</div>
+
+
+<div class="container footer">
+    <div id="address-div">
+        <h1>Address</h1>
+        Team Charlie <br/>
+        Room - E326 <br/>
+        Guldbergsgade 29N, <br/>
+        2200 København <br/></div>
+    <div id="contact-div">
+        <h1>Contact Us</h1>
+        Phone: + 45 00 00 00 00 <br/>
+        Email: madspild@stud.kea.dk</div>
+    <div id="follow-div">
+        <h1>Follow Us</h1>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a></div>
+</div>
+
+</body>
+</html>

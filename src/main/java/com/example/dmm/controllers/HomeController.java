@@ -11,6 +11,16 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/index")
+    public String index() {
+       return "index";
+    }
+
+    @GetMapping("/restaurant")
+    public String restaurant() {
+       return "Restaurant";
+    }
+
     @GetMapping("/Kommune")
     public String communal() {
        return "communal";
