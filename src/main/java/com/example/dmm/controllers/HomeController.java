@@ -25,4 +25,9 @@ public class HomeController {
     public String communal() {
        return "communal";
     }
+
+    @GetMapping("/whoweare")
+    public String whoWeAre() {
+        return "whoweare";
+    }
 }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    body {
+        font-size: 20px;
+        font-family: courier, serif;
+    }
+
+    /* CSS for main structure starts here*/
+    .head-menu{padding: 0px 75px 0px 75px; background-color: #459C98;}
+    .body-div{margin: 0px 75px 0px 75px; background-color: lightblue; padding: 15px;}
+    .footer{padding: 0px 75px 0px 75px; background-color: #459C98; }
+    .container, .row{display: flex;}
+    .container > div{flex: 1;}
+    /* CSS for main structure ends here*/
+
+    #name-div{
+        font-weight: bold;
+        font-size: xxx-large;
+        color: white;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+    .images {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: solid black;
+        border-width: 2px;
+
+    }
+
+    #menu-div{
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    .column{
+        border: 5px solid #598c85;
+        border-radius: 15px;
+        width: 50%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #2f5aa2;
+        color: #bbd9b8;
+        height: auto;
+    }
+    .row{margin-left: 20px; margin-right: 20px;}
+    .column h1{ color: #FFF0F5}
+
+
+
+
+
+    /* CSS for navigation menu starts here*/
+    *, *:before, *:after{ padding: 0; margin: 0; }
+    nav ul{
+        list-style: none;
+        position: relative;
+        float: left;
+        display: inline-table;
+    }
+    nav ul li{float: left; border: 1px solid white; border-radius: 5px; margin: 2px; background-color: #47806D;}
+    nav ul li:hover{background: rgba(0,0,0,.25);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li a{
+        display: block;
+        padding: 30px 20px;
+        text-decoration: none; /* remove underline from link*/
+        color: white; /* text colour of each menu*/
+        letter-spacing: 2px; /* make space between each letter */
+
+    }
+    nav ul ul{
+        display: none;
+        background: #47806D;
+        position: absolute; /* prevent overflow ul*/
+    }
+    nav ul ul li{
+        float: none;
+        position: relative;
+    }
+    nav ul ul li a {
+        padding: 15px 30px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    /* CSS for navigation menu ends here*/
+
+
+
+
+    /* CSS for footer starts here ***************************************/
+    /*  to create different social media icons, font-awesome from cloudflare.com is used*/
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 15px;
+    }
+    .fa:hover { opacity: 0.7; }
+    .fa-facebook { background: #3B5998; color: white; }
+    .fa-instagram {background: #125688; color: white; }
+    .fa-youtube {background: #bb0000; color: white; }
+    /* CSS for footer ends here *****************************************/
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>kommune</title>
+</head>
+<body>
+
+    <div class="container head-menu">
+        <div id="logo-div">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274211050_682990152776735_4994998550827804040_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=aiaBsAeco6MAX8e6TBH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL46b8FD5aK_XZw2eXHLkvmKt_hhxXxPDUXOFH1oNbATA&oe=6243292E" height="200px", width="400px">
+        </div>
+        <div id="name-div">
+            Danmark <br> Mod <br> Madspild
+        </div>
+        <div id="menu-div">
+
+            <nav>
+                <ul>
+                    <li><a href="index">HOME</a></li>
+                    <li><a href="#">ABOUT</a>
+                        <ul>
+                            <li><a href="whoweare">WHO WE ARE</a></li>
+                            <li><a href="">OUR HISTORY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="restaurant">RESTAURANT</a></li>
+                    <li><a href="communal">KOMMUNE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+        <div class="body-div">
+
+            <div class="row">
+                <div class="column">
+                    <h1>Søs Ly Kjergaard</h1>
+                    <p></p>
+                    <img class="images" src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fstudkea-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!NZRXrIaOhkCL2spy8v4ZK6n9w7O8lchBrqCBODELXNq5q4AGKiu1Rav1A32hTZ7w%2Fitems%2F01C45NXJU4WDFOCG2K2VCJRRZ6PVGJRV3T%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvc3R1ZGtlYS1teS5zaGFyZXBvaW50LmNvbUBkMTBjM2M2ZS1jMjI4LTQ5NDQtOGI2YS02MDY3YzZhZmUzYzkiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjQ2MjExNjAwIiwiZXhwIjoiMTY0NjIzMzIwMCIsImVuZHBvaW50dXJsIjoiUzhpN2x6ZE1WSmlDZDc5SXBFUTd6d09uYUtlUEh6aHlZV0dxL2pvWFFXQT0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6IllXTTFOemswTXpVdE9HVTROaTAwTURnMkxUaGlaR0V0WTJFM01tWXlabVV4T1RKaSIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8bW9oYTEzOTVAc3R1ZC5rZWEuZGsiLCJuaWkiOiJtaWNyb3NvZnQuc2hhcmVwb2ludCIsImlzdXNlciI6InRydWUiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwMTY3YmU0YmY4QGxpdmUuY29tIiwic2Vzc2lvbmlkIjoiMzhkZDA5ZTYtYWM5MS00NWVhLWJmOGEtNDZlM2FjYzdjZDdjIiwidHQiOiIwIiwidXNlUGVyc2lzdGVudENvb2tpZSI6IjMiLCJpcGFkZHIiOiI5NC4xOC4yNDMuMTYyIn0.U2FmSkRQcjBLekJ1Nm0rZHZRM1dZZmNpRWlXWXZ6TWFjemRTdzFwMHBNND0&cTag=%22c%3A%7BE1CAB09C-4A1B-44D5-98C7-3E7D4C98D773%7D%2C2%22&encodeFailures=1&width=1920&height=906&srcWidth=&srcHeight=">
+                    <p>
+                        text asldjnas dljas ndljadns lasnd jladsnjl andljasn ljsndlj nadsljn dljnasldjn alsjnd ljasndlja nljasnd ljansd ljansd
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h1>Sara Engsted Andreasen</h1>
+                    <img class="images" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274822512_995338611088770_2075975989643329986_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=aee45a&_nc_ohc=RVYe2JspcjEAX98wa8Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIovC713wqeLRkKzBhIGrWgG-0ogb8PI58LmIm7SJzBJw&oe=6243FE87">
+                    <p>
+                       text
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <h1>Md Nazmul Huq</h1>
+                    <p></p>
+                    <img class="images" src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fstudkea-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!QSf7ROX6iUyzFZd7-zSQFqn9w7O8lchBrqCBODELXNq5q4AGKiu1Rav1A32hTZ7w%2Fitems%2F01ITYPC54DTFDPEKF5TBGK26PZXXUUOYJN%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvc3R1ZGtlYS1teS5zaGFyZXBvaW50LmNvbUBkMTBjM2M2ZS1jMjI4LTQ5NDQtOGI2YS02MDY3YzZhZmUzYzkiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjQ2MjExNjAwIiwiZXhwIjoiMTY0NjIzMzIwMCIsImVuZHBvaW50dXJsIjoiZkJaNHIyTGE3V09Jc2E3aFFxRU53d1locmtka21qc2o0S3pSSjNhdjhBQT0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ik5EUm1ZakkzTkRFdFptRmxOUzAwWXpnNUxXSXpNVFV0T1RjM1ltWmlNelE1TURFMiIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8bW9oYTEzOTVAc3R1ZC5rZWEuZGsiLCJuaWkiOiJtaWNyb3NvZnQuc2hhcmVwb2ludCIsImlzdXNlciI6InRydWUiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwMTY3YmU0YmY4QGxpdmUuY29tIiwic2Vzc2lvbmlkIjoiMzhkZDA5ZTYtYWM5MS00NWVhLWJmOGEtNDZlM2FjYzdjZDdjIiwidHQiOiIwIiwidXNlUGVyc2lzdGVudENvb2tpZSI6IjMiLCJpcGFkZHIiOiI5NC4xOC4yNDMuMTYyIn0.dFowZ2dEbDVMdHBCczhrK25sVGI3K2xxNExxVzlHYURYSDk5TGtyUm5ZVT0&cTag=%22c%3A%7BF2469983-BD28-4C98-AD79-F9BDE947612D%7D%2C2%22&encodeFailures=1&width=1920&height=906&srcWidth=&srcHeight=">
+                    <p>
+                        text
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h1>Mohammad Mansour</h1>
+                    <img class="images" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/50949518_239500746991838_3293977785587990528_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=aee45a&_nc_ohc=LJKz90bnUkgAX_qx7nA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVILZ3zBd6oOQk60GR-pXHfwiUiywTknDN3SBvocxLdv3Q&oe=623D85D1">
+                    <p>
+                        my friends call me Mo, it's easier to remember. i Study Data Science, Im a student at a school called KEA it
+                        stands for Københavns Ervhervsakademi, i have lebanese background, but i have lived in denmark my whole life.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container footer">
+
+        <div id="address-div">
+            <h1>Address</h1>
+            Team Charlie <br/>
+            Room - E326 <br/>
+            Guldbergsgade 29N, <br/>
+            2200 København <br/>
+        </div>
+
+        <div id="contact-div">
+            <h1>Contact Us</h1>
+            Phone: + 45 00 00 00 00 <br/>
+            Email: madspild@stud.kea.dk
+        </div>
+        <div id="follow-div">
+            <h1>Follow Us</h1>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </div>
+    </div>
+
+</body>
+</html>
