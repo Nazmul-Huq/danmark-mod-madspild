@@ -21,7 +21,7 @@ public class HomeController {
        return "restaurant";
     }
 
-    @GetMapping("/Kommune")
+    @GetMapping("/communal")
     public String communal() {
        return "communal";
     }
