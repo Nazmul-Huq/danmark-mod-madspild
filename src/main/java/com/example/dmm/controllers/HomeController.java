@@ -18,7 +18,7 @@ public class HomeController {
 
     @GetMapping("/restaurant")
     public String restaurant() {
-       return "Restaurant";
+       return "restaurant";
     }
 
     @GetMapping("/Kommune")
