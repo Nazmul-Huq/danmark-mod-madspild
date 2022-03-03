@@ -26,9 +26,12 @@ public class HomeController {
        return "communal";
     }
 
-    @GetMapping("/forbruger")
-    public String forbruger() {return "forbruger"; }
+    @GetMapping("/enkelteForbruger")
+    public String forbruger() {return "enkelteForbruger"; }
 
     @GetMapping("/ourhistory")
     public String OurHistory() {return "ourhistory"; }
+
+    @GetMapping("/whoweare")
+    public String whoweare() {return "whoweare"; }
 }
