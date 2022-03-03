@@ -26,11 +26,6 @@ public class HomeController {
        return "communal";
     }
 
-    @GetMapping("/whoweare")
-    public String whoWeAre() {
-        return "whoweare";
-    }
-
     @GetMapping("/forbruger")
     public String forbruger() {return "forbruger"; }
 
