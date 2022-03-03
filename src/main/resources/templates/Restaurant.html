@@ -6,6 +6,12 @@
 
     <style>
 
+        a:link {color: white}
+        a:visited {color: black}
+        a:hover {color: white}
+        a:active {color: black}
+        a{text-decoration: none;}
+
         body {
 
             font-size: 20px;
@@ -46,7 +52,7 @@
             margin: 10px;
             padding: 20px;
             background-color: #a69a9a;
-            color: #bbd9b8;
+            color: black;
             height: auto;
         }
 
@@ -57,19 +63,34 @@
             margin: 10px;
             padding: 20px;
             background-color: #a69a9a;
-            color: #bbd9b8;
+            color: black;
             height: auto;
+        }
+
+        .boxes{
+            border: 1px solid #347572;
+            width: auto;
+            background-color: #a69a9a;
+            margin: 10px;
+            padding: 20px;
+            color: black;
+            height: auto;
+
         }
 
         .row{margin-left: 20px; margin-right: 20px}
         .column h1{ color: #FFF0F5}
         .column2 h1{ color: #FFF0F5}
-        /* Don't need
+        /* Don't need here
         .column img{width: 100%;}
          */
+        .h4{color: #bbd9b8}
+
         .read-more{
             font-weight: bold;
+            /*
             font-size: 25px;
+             */
         }
 
         /* CSS for navigation menu starts here*/
@@ -173,15 +194,27 @@
         <div class="column">
             <h1>Dataindsamling/Info</h1>
             <p>
-                •
+            <h4>Restauranter:</h4>
+                Hoteller og restauranter udgør 4% af madspild
                 <br>
-                •
+                • Madspild i kg/gæst i gns - 0.39 kg/gæst
                 <br>
-                •
+                • Årligt kg i alt - 11.793,6 kg/år
                 <br>
-                •
+                • Omkostninger årligt - 247.665,6 kr./år
+            <h4>Storkøkken (inkl. buffet):</h4>
+                • Madspild i kg/gæst i gns - 0,13 kg/gæst
                 <br>
-                •
+                • Årligt kg i alt - 5.356 kg/år
+                <br>
+                • Omkostninger årligt - 112.476 kr/år
+            <h4>Quick-service Restaurant</h4>
+                • Madspild i kg/gæst i gns - 0.033 kg/gæst
+                <br>
+                • Årligt kg i alt - 1.856,4 kg/år
+                <br>
+                • Omkostninger årligt - 38.984,4 kr./år
+
             </p>
             <p></p>
         </div>
@@ -202,7 +235,20 @@
     <div class="row">
             <div class="column2">
                 <h1>Forslag</h1>
-                <p></p>
+                <div class="boxes">
+                    <p>Nye undersøgelser viser at halvdelen af danskerne ville bruge en doggybag til resterne i restauranten, hvis der var nem og diskret adgang til den <br>
+                    <div class="read-more"><a href="https://www.dr.dk/nyheder/indland/en-halv-boef-i-posen-landbrug-foedevarer-vil-have-restauranter-til-tilbyde-doggybags"> Læs mere her</a> </p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <p>Donationer:<br>
+                        Når tilberedt mad ikke kan gemmes, betyder det ikke, at det nødvendigvis skal smides ud. Overskudsmad fra buffeter eller ubrugte råvarer kan gives videre til organisationer, som arbejder med at formidle mad videre til dem, der har brug for det. Husk, at mad til donation skal overholde visse krav i forhold til forudgående håndtering.
+                    <div class="read-more"><a href="https://www.foedevarestyrelsen.dk/Selvbetjening/Guides/Sider/Saadan-kan-virksomheden-undgaa-madspild.aspx"> Læs mere om reglerne her</a> </p>
+                    </div>
+                    </div>
+                <div class="boxes">
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
