@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our History</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    body {
+        font-size: 20px;
+        font-family: courier, serif;
+    }
+
+    /* CSS for main structure starts here*/
+    .head-menu{padding: 0px 75px 0px 75px; background-color: #459C98;}
+    .body-div{margin: 0px 75px 0px 75px; background-color: lightblue; padding: 15px;}
+    .footer{padding: 0px 75px 0px 75px; background-color: #459C98; }
+    .container, .row{display: flex;}
+    .container > div{flex: 1;}
+    /* CSS for main structure ends here*/
+
+    #name-div{
+        font-weight: bold;
+        font-size: xxx-large;
+        color: white;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+    .images {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: solid black;
+        border-width: 2px;
+
+    }
+
+    #menu-div{
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    .column{
+        border: 5px solid #598c85;
+        border-radius: 15px;
+        width: 50%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #2f5aa2;
+        color: #bbd9b8;
+        height: auto;
+    }
+    .row{margin-left: 20px; margin-right: 20px;}
+    .column h1{ color: #FFF0F5}
+
+
+
+
+
+    /* CSS for navigation menu starts here*/
+    *, *:before, *:after{ padding: 0; margin: 0; }
+    nav ul{
+        list-style: none;
+        position: relative;
+        float: left;
+        display: inline-table;
+    }
+    nav ul li{float: left; border: 1px solid white; border-radius: 5px; margin: 2px; background-color: #47806D;}
+    nav ul li:hover{background: rgba(0,0,0,.25);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li a{
+        display: block;
+        padding: 30px 20px;
+        text-decoration: none; /* remove underline from link*/
+        color: white; /* text colour of each menu*/
+        letter-spacing: 2px; /* make space between each letter */
+
+    }
+    nav ul ul{
+        display: none;
+        background: #47806D;
+        position: absolute; /* prevent overflow ul*/
+    }
+    nav ul ul li{
+        float: none;
+        position: relative;
+    }
+    nav ul ul li a {
+        padding: 15px 30px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+    /* CSS for navigation menu ends here*/
+
+    .column{
+        border: 5px solid #a69a9a;
+        border-radius: 15px;
+        width: 83%;
+        margin: 100px;
+        padding: 20px;
+        background-color: #347572;
+        color: #bbd9b8;
+        height: auto;
+        text-align: center;
+    }
+
+
+
+    /* CSS for footer starts here ***************************************/
+    /*  to create different social media icons, font-awesome from cloudflare.com is used*/
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 15px;
+    }
+    .fa:hover { opacity: 0.7; }
+    .fa-facebook { background: #3B5998; color: white; }
+    .fa-instagram {background: #125688; color: white; }
+    .fa-youtube {background: #bb0000; color: white; }
+    /* CSS for footer ends here *****************************************/
+</style>
+
+</head>
+<body>
+
+<div class="container head-menu">
+    <div id="logo-div">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274211050_682990152776735_4994998550827804040_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=aee45a&_nc_ohc=aiaBsAeco6MAX8e6TBH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL46b8FD5aK_XZw2eXHLkvmKt_hhxXxPDUXOFH1oNbATA&oe=6243292E" height="200px", width="400px">
+    </div>
+    <div id="name-div">
+        Danmark <br> Mod <br> Madspild
+    </div>
+    <div id="menu-div">
+
+        <nav>
+            <ul>
+                <li><a href="index">HOME</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul>
+                        <li><a href="whoweare">WHO WE ARE</a></li>
+                        <li><a href="">OUR HISTORY</a></li>
+                    </ul>
+                </li>
+                <li><a href="restaurant">RESTAURANT</a></li>
+                <li><a href="communal">KOMMUNE</a></li>
+                <li><a href="communal">FORBRUGER</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+<div class="body-div">
+    <div class="column">
+        <h1>Our History</h1>
+        <br>
+        <p>
+            Vi er en dansk organisation ved navn "Danmark mod madspild".
+            <br>
+            Æren for vores hjemmeside skyldes vores kampagne "Danmarks kamp mod madspild",
+            hvor målet er at informere danskere hvad mad spild er og hvad dårligt det gør.
+            <br>
+            Derudover ønsker vi også at skabe en forståelse og rådgive danskerne, om det så er kommunalt, erhverv eller hos den normale forbruger
+            - så længe vi kan give gode tips og information om dette vigtige emne, så er har vi fuldført vores mission.
+            <br> <br>
+            Som organisation startede vi op 2016, hvor vi begyndte at undersøge, hvor meget mad der egentlig går til spilde her i Danmark.
+            Vi gik herefter i dybden med konsekvenserne af madspild, og satte derefter fokus på hvordan og hvor vi kunne gøre en forskel.
+            <br> <br>
+            Vi håber på at denne kampagne vil række ud og gøre den forskel - og at dig der læser vil være med i Danmarks kamp!
+            <br> <br>
+            ❤ Danmark mod Madspild ❤
+        </p>
+
+    </div>
+</div>
+
+
+<div class="container footer">
+
+    <div id="address-div">
+        <h1>Address</h1>
+        Team Charlie <br/>
+        Room - E326 <br/>
+        Guldbergsgade 29N, <br/>
+        2200 København <br/>
+    </div>
+
+    <div id="contact-div">
+        <h1>Contact Us</h1>
+        Phone: + 45 00 00 00 00 <br/>
+        Email: madspild@stud.kea.dk
+    </div>
+    <div id="follow-div">
+        <h1>Follow Us</h1>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
+</div>
+
+</body>
+</html>
