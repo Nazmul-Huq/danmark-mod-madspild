@@ -30,4 +30,10 @@ public class HomeController {
     public String whoWeAre() {
         return "whoweare";
     }
+
+    @GetMapping("/forbruger")
+    public String forbruger() {return "forbruger"; }
+
+    @GetMapping("/ourhistory")
+    public String OurHistory() {return "ourhistory"; }
 }
